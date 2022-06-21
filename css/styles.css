@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+section {
+    min-height: 100vh;
+    width: 100%;
+}
+
+section:nth-child(1) {
+    background-image: url(https://images.unsplash.com/photo-1519120944692-1a8d8cfc107f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+section:nth-child(2) {
+    background-image: url(https://images.unsplash.com/photo-1514496959998-c01c40915c5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container {
+    min-height: 100vh;
+    padding: 90px 0;
+}
+
+h1 {
+    font-weight: 800 !important;
+    font-size: 3rem;
+}
+
+.title-box p {
+    max-width: 52ch;
+    line-height: 1.5;
+    padding: 1em;
+}
+
+.title-box .btn {
+    padding: 10px 40px;
+    font-weight: bold;
+}
+
+/* ///////////////////////////// */
+/* ///////////////////////////// */
+/* ///////////////////////////// */
+
+.cards-container {
+    gap: 1.6em;
+    flex-wrap: wrap;
+}
+
+.image {
+    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 16/11;
+    display: flex;
+    align-items: center;
+    border-radius: 0.3em;
+    -webkit-border-radius: 0.3em;
+    -moz-border-radius: 0.3em;
+    -ms-border-radius: 0.3em;
+    -o-border-radius: 0.3em;
+}
+
+.card-body {
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    padding: 1em;
+    padding-bottom: 1.6em;
+    border-radius: 0.3em;
+    -webkit-border-radius: 0.3em;
+    -moz-border-radius: 0.3em;
+    -ms-border-radius: 0.3em;
+    -o-border-radius: 0.3em;
+    display: flex;
+    gap: 20px;
+
+    border-radius: 0.5em;
+    box-shadow: 0px 15px 38px -15px ;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+
+    width: 20em;
+}
+
+.card-title {
+    text-align: center;
+}
+.card-text {
+    text-align: center;
+}
+
+.card-body .btn {
+    width: 70%;
+    font-weight: bold;
+}
+
+.card-title {
+    font-weight: 900;
+    font-size: 26px;
+}
+
+@media (max-width: 280px) {
+    .card {
+        width: 80% !important;
+    }
+}
+
+.p-5 {
+    padding: 3rem 0 !important
+}
